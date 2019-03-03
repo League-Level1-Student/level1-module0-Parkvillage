@@ -22,7 +22,7 @@ public class PhotoQuiz {
                 quizWindow.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);   // This will make sure the program exits when you close the window
 
 		// 1. find an image on the internet, and put its URL in a String variable (from your browser, right click on the image, and select “Copy Image Address”)
-
+                String url="https://www.gannett-cdn.com/presto/2019/02/25/USAT/f671122d-833f-49ee-a96a-14d06784b591-EPA_USA_TRUMP_GOVERNORS.JPG?crop=4183,2343,x0,y166&width=3200&height=1680&fit=bounds";
 		// 2. create a variable of type "Component" that will hold your image
 
 		// 3. use the "createImage()" method below to initialize your Component
