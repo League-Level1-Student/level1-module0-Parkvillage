@@ -1,4 +1,4 @@
-int i= 0;
+int y= 0;
   int randomNumber;
   int score=0;
   
@@ -15,17 +15,21 @@ void draw(){
 fill(75, 200, 216);
 
 
-ellipse(randomNumber, i, 10, 30);
-i+=5;
+ellipse(randomNumber, y, 10, 30);
+checkCatch(randomNumber);
+y+=5;
 fill(132, 70, 15);
 rect(mouseX,450, 50, 50);
-if(i== 500){
+if(y==500){
  randomNumber=(int) random(width);
-  i=0;
-checkCatch(randomNumber);
+  y=0;
+
 
 
 }
+fill(0, 0, 0);
+textSize(16);
+text("Score: " + score, 20, 20);
 
 }
 void checkCatch(int x){
@@ -33,4 +37,5 @@ void checkCatch(int x){
           score++;
      else if (score > 0) 
           score--;
-     println("Your score is now: " + score); }
+     println("Your score is now: " + score); 
+}
